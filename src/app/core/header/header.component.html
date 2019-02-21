@@ -7,7 +7,7 @@
         </a>
       </div>
       <div fxFlex="20" id="today" class="text-center">
-        <span ng-show="title || false" class="title">{{ title }}</span>
+        <span ng-show="title || false" class="title" style="font-size: 20px">{{ title }}</span>
       </div>
       <div fxFlex="40" class="text-right">
         <!-- Place this tag where you want the button to render. -->
@@ -18,17 +18,17 @@
           <mat-icon>public</mat-icon>
         </button>
         <mat-menu #matmenu="matMenu">
+          <button mat-menu-item (click)="changeLanguage('ua')">
+            <mat-icon>flag</mat-icon>
+            <span>
+              Ukrainian
+            </span>
+          </button>
           <button mat-menu-item (click)="changeLanguage('en')">
             <mat-icon>flag</mat-icon>
             <span>
-                            English
-                        </span>
-          </button>
-          <button mat-menu-item (click)="changeLanguage('de')">
-            <mat-icon>flag</mat-icon>
-            <span>
-                            Deutsch
-                        </span>
+              English
+            </span>
           </button>
         </mat-menu>
 

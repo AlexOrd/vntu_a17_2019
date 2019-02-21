@@ -1,7 +1,7 @@
-import {Component, Inject} from '@angular/core';
-import {ProgressBarService} from '../progress-bar.service';
-import {APP_CONFIG, AppConfig} from '../../config/app.config';
-import {TranslateService} from '@ngx-translate/core';
+import { Component, Inject } from '@angular/core';
+import { ProgressBarService } from '../progress-bar.service';
+import { APP_CONFIG, AppConfig } from '../../config/app.config';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -9,17 +9,18 @@ import {TranslateService} from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
   title: string;
   currentDate: number = Date.now();
   appConfig: any;
   menuItems: any[];
   progressBarMode: string;
 
-  constructor(@Inject('state') private state, @Inject(APP_CONFIG) appConfig,
-              private progressBarService: ProgressBarService,
-              private translateService: TranslateService) {
-
+  constructor(
+    @Inject('state') private state,
+    @Inject(APP_CONFIG) appConfig,
+    private progressBarService: ProgressBarService,
+    private translateService: TranslateService
+  ) {
     this.loadTitle();
     this.appConfig = appConfig;
     this.loadMenus();
@@ -41,12 +42,16 @@ export class HeaderComponent {
   }
 
   private loadMenus(): void {
-    this.translateService.get(['Pages.Dashboard.Title', 'Pages.Shopping.Title'], {}).subscribe((texts: any) => {
-      this.menuItems = [
-        {link: '/', name: texts['Pages.Dashboard.Title']},
-        {link: '/' + AppConfig.routes.shopping, name: texts['Pages.Shopping.Title']}
-      ];
-    });
+    this.translateService
+      .get(['Pages.Dashboard.Title', 'Pages.Shopping.Title'], {})
+      .subscribe((texts: any) => {
+        this.menuItems = [
+          { link: '/', name: texts['Pages.Dashboard.Title'] },
+          {
+            link: '/' + AppConfig.routes.shopping,
+            name: texts['Pages.Shopping.Title']
+          }
+        ];
+      });
   }
-
 }

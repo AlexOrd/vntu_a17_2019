@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "build-gh": "ng build --prod --base-href \"/angular5-example-shopping-app/\"",
+    "build-gh": "ng build --prod --base-href \"/vntu_a17_2019/\"",
     "deploy-to-ghpages": "npm run build-gh && ngh",
     "lint": "ng lint"
   },
