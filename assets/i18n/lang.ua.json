@@ -1,0 +1,39 @@
+
+{
+  "Pages": {
+    "Dashboard": {
+      "Title": "ВНТУ онлайн магазин",
+      "Headline": "Замовлення товарiв вiддалено",
+      "welcomeText": "Ви можете створити Ваш новий кошик товарiв тут:"
+    },
+    "Shopping": {
+      "Title": "Ваш список кошикiв",
+      "Headline": "Запрошуэмо до шопiнгу"
+    },
+    "ShoppingList": {
+      "Title": "Список товарiв"
+    }
+  },
+  "error404": "404 Error | Не знайдено",
+  "angularShoppingListsApp": "ВНТУ онлайн магазин",
+  "shoppingLists": "Лист замовлень",
+  "shoppingListCreated": "Лист замовлень створено",
+  "saved": "Збережено",
+  "shoppingListRemoved": "Лист замовлень видалено",
+  "shoppingListDefault": "Це Ваш стандартний лист замовлень. Ви не можете видалити його.",
+  "createShoppingList": "Створити лист замовлень",
+  "removeShoppingList": "Видалити лист замовлень",
+  "areYouSure": "Ви впевненi?",
+  "name": "Назва",
+  "create": "Створити",
+  "yes": "Так",
+  "no": "Нi",
+  "availableProducts": "Доступнi товари",
+  "addToShoppingList": "Додати в кошик замовлень",
+  "productSearch": "Пошук товару",
+  "productAdded": "Товар додано в Ваш кошик",
+  "productRemovedFromShoppingList": "Товар видалено з Вашого кошика",
+  "removeFromShoppingList": "Видалити з кошика",
+  "shoppingListName": "Назвазва листу замовлень",
+  "save": "Зберегти"
+}
